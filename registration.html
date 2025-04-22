@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VN BookStore</title>
+    <!-- Using relative link cmt by thoai -->
+    <!-- Reset.css using to reset style -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- === Fonts==== -->
+    <!-- Font serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font san-serif. Embed fonts Source Sans Pro. its not in google font -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header - Using auto load header-->
+    <header id="header"></header>
+    <script>
+      load("#header", "./template/header.html");
+    </script>
+    <!-- Main -->
+    <main class="container">
+      <!-- Form info -->
+      <!-- Title -->
+      <div class="form-intro">
+        <h1 class="form-title">Create an Account</h1>
+        <p class="form-desc">
+          Start your <em>VN BookStore</em> journey by creating your account.
+        </p>
+      </div>
+      <!-- Form -->
+      <form
+        class="register-form"
+        id="register-form"
+        method="post"
+        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+        name="register"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form__label" for="fname"
+              >First name<abbr title="required">&#42;</abbr></label
+            >
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Enter first name"
+              id="fname"
+              name="user[firstName]"
+              autofocus
+            />
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label class="form__label" for="lname"
+              >Last name<abbr title="required">&#42;</abbr></label
+            >
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Enter last name"
+              id="lname"
+              name="user[lastName]"
+            />
+            <span class="form-message"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form__label" for="registerEmail"
+              >Email<abbr title="required">&#42;</abbr></label
+            >
+            <input
+              class="form__input"
+              type="email"
+              name="user[email]"
+              id="registerEmail"
+              placeholder="Enter email"
+            />
+            <span class="form-message"></span>
+            <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" -->
+            <!-- Regular Expression Validation email-->
+          </div>
+          <div class="form-group">
+            <label class="form__label" for="registerPhone">Phone number</label>
+            <input
+              class="form__input"
+              type="tel"
+              name="user[phone]"
+              id="registerPhone"
+              placeholder="Enter phone number"
+            />
+            <span class="form-message"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form__label" for="registerPassword"
+              >Password<abbr title="required">&#42;</abbr></label
+            >
+            <input
+              class="form__input"
+              type="password"
+              name="user[password]"
+              id="registerPassword"
+              autocomplete="new-password"
+              placeholder="Enter password"
+            />
+            <!-- autocomplete="new-password" Ngăn trình duyệt tự điền pass -->
+            <span class="form-message"></span>
+          </div>
+          <div class="form-group">
+            <label class="form__label" for="confirmPassword"
+              >Confirm password<abbr title="required">&#42;</abbr></label
+            >
+            <input
+              class="form__input"
+              type="password"
+              id="confirmPassword"
+              autocomplete="new-password"
+              placeholder="Enter password again"
+            />
+            <span class="form-message"></span>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            class="checkbox__input"
+            id="opt_into_marketing"
+            value="1"
+            name="opt_into_marketing"
+            hidden
+          />
+          <label for="opt_into_marketing" class="checkbox__label">
+            <span>
+              Receive <strong>reading recommendations</strong> straight to your
+              inbox.</span
+            >
+          </label>
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            class="checkbox__input"
+            id="agree_terms_conditions"
+            hidden
+          />
+          <label for="agree_terms_conditions" class="checkbox__label">
+            <span>
+              I <strong>agree</strong> to the VN BookStore
+              <a class="term-link" href="#!" target="_blank" rel="noopener"
+                >Terms &amp; Conditions</a
+              >.
+            </span>
+          </label>
+          <span class="form-message"></span>
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script>
+      load("#footer", "./template/footer.html");
+    </script>
+    <!-- modal__sign-in__close -->
+    <script src="./assets/js/openCloseModal.js"></script>
+    <!-- JS validation form -->
+    <script src="./assets/js/validator.js"></script>
+    <script>
+      Validator({
+        form: "#register-form",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired("#fname", "Please enter your first name."),
+          Validator.isRequired("#lname", "Please enter your last name."),
+          Validator.isRequired("#registerEmail", "Please enter your email."),
+          Validator.isEmail("#registerEmail"),
+          Validator.isRequired(
+            "#registerPassword",
+            "Please enter your password."
+          ),
+          Validator.minLength("#registerPassword", 6),
+          Validator.isRequired(
+            "#confirmPassword",
+            "Please enter your password."
+          ),
+          Validator.isConfirmed(
+            "#confirmPassword",
+            function () {
+              return document.querySelector("#register-form #registerPassword")
+                .value;
+            },
+            "Your password does not match."
+          ),
+          Validator.isRequiredCheckbox(
+            "#agree_terms_conditions",
+            "You must agree to the Terms & Conditions."
+          ),
+        ],
+      });
+    </script>
+  </body>
+</html>

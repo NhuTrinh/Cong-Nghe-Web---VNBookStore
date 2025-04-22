@@ -1,0 +1,1102 @@
+/*-----------------------------------------Common-------------------------------------------*/
+body{
+    overflow-x: hidden;
+}
+
+li{
+
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    
+}
+
+/*-----------------------------------------Header-------------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+.back-ground {
+    background-image: url('picture/back-ground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div[class='nav_left'] ul{
+    
+    display: flex;
+    padding: 4px 40px;
+    margin: 0px;
+}
+
+.nav_left{
+    padding-left: 20px;
+}
+
+.nav_left .VNBookStore{
+    background-size: auto 18px;
+    padding-right: 15px;
+    background-position: 0px 0;
+    border-right: 1px solid #d5d4d1;
+    margin-left: 2px;
+    padding-left: 15px;
+}
+
+.nav_left .Shop_finder{
+    background: url(picture/icon/menu_left/shop_finder.png) no-repeat 100% 0; 
+    background-size: auto 18px;
+    padding-right: 15px;
+    background-position: 10px 0;
+    border-right: 1px solid #d5d4d1;
+    margin-left: 2px;
+    padding-left: 30px;
+}
+
+.nav_left .VNBookStore:hover, nav_left .Shop_finder:hover, .nav_left .Help:hover, .nav_left .Events:hover, .nav_left .Blog:hover, .nav_left .Gift_card:hover,.nav_left .Win:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.nav_left .Help{
+    border-right: 1px solid #d5d4d1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav_left .Events{
+    border-right: 1px solid #d5d4d1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav_left .Blog{
+    border-right: 1px solid #d5d4d1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav_left .Gift_card{
+    border-right: 1px solid #d5d4d1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nav_left .Win{
+    padding-left: 15px;
+}
+
+.nav_left .VNBookStore a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: serif;
+    color: black;
+    font-weight: 530;
+    letter-spacing: 1.5px;
+    word-spacing: normal;
+}
+
+.nav_left .Shop_finder a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_left .Help a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_left .Events a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_left .Blog a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_left .Gift_card a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_left .Win a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+div[class='nav_right'] ul{
+    list-style-type: none;
+    display: flex;
+    padding: 4px 15px;
+    margin: 0px ;
+}
+
+.nav_right .Account{
+    background: url(picture/icon/menu_right/account.png) no-repeat 100% 0;
+    background-size: auto 18px;
+    background-position: 8px 0;
+    border-right: 1px solid #d5d4d1;
+    padding-right: 15px;
+    padding-left: 30px;
+}
+
+.nav_right .Join{
+    background-size: auto 18px;
+    padding-right: 15px;
+    font-weight: 550;
+    border-right: 1px solid #d5d4d1;
+    padding-left: 15px;
+}
+
+
+.nav_right .Join .join_plus_icon{
+    background: url(picture/icon/menu_right/plus-green.png) no-repeat 100% 0;
+    background-size: auto 23px;
+    padding-right: 25px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+.nav_right .Wish_list{
+    background: url(picture/icon/menu_right/heart.png) no-repeat 100% 0;
+    background-size: auto 16px;
+    font-weight: 550;
+    background-position: 14px 0;
+    padding: 0px 35px 0px;
+}
+
+.nav_right .Account a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 540;
+    color: #000;
+}
+
+.nav_right .Join a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: black;
+    font-weight: 540;
+}
+
+.nav_right .Wish_list a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 540;
+    color: #000;
+}
+
+.nav_right .Account:hover, .nav_right .Join:hover, .nav_right .Wish_list:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.Account{
+    position: relative;
+    display:inline-block
+}
+
+.Account-container{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 120px;
+    text-align: center;
+}
+
+.Account-container::before {
+    content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 12px 12px 12px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  z-index: 2;
+  }
+
+  .Account-container::after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 13px 13px 13px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    z-index: 1;
+  }
+
+.Account:hover .Account-container{
+    display: block;
+}
+
+.Account-container-dropdown{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Account-container-dropdown a{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.Account-container-dropdown a:hover{
+    text-decoration: underline;
+}
+
+.Sign-in, .Register{
+    padding: 8px 12px;
+    margin: 0px 10px
+}
+
+.Sign-in{
+    border-bottom: 1px solid black;
+}
+
+.title{
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 100px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Baskerville', serif;
+    margin: 0px;
+    border-bottom: 1px solid;
+}
+
+.mainmenu a.menu{
+    color: #336B75;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600px;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    font-family: sans-serif;
+} 
+
+a.menu::after {
+    position: absolute;
+}
+
+.New a:hover, .Comming_soon a:hover, .Special_editions a:hover, .Books a:hover, .Favourites a:hover, .Game a:hover, .Stationery_gift a:hover{
+    background-color: #336B75;
+    color: white;
+ }
+
+.New {
+    padding-right: 5px;
+    border-right: 1px solid #336B75; 
+}
+
+.Comming_soon {
+    border-right: 1px solid #336B75; 
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Special_editions {
+    border-right: 1px solid #336B75; 
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Books {
+    border-right: 1px solid #336B75; 
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Favourites {
+    border-right: 1px solid #336B75; 
+    padding-right: 5px;
+    padding-left: 5px;
+}
+ 
+.Game {
+    border-right: 1px solid #336B75; 
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Stationery_gift{
+    padding-left: 5px;
+}
+
+.Game {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-menu {
+    display: none;
+    width: 100%;
+    vertical-align: top;
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-top: 5px;
+}
+
+.Game:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu .sub-menu-sub {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sub-menu .sub-menu-sub span{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color:#336B75;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+.sub-menu .sub-menu-sub ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.All-Game, .Top-Categories, .More-Games-Categories {
+    flex: 1;
+    min-width: 200px;
+    width: 33.33%;
+} 
+
+.sub-menu-sub .title, 
+.More-Games-Categories > span {
+    font-weight: bold;
+    font-size: 1.05em;
+    color: #336B75;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu ul li.subnav-item {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    padding-left: 0px;
+}
+
+.sub-menu ul li.subnav-item:hover {
+    color: #336B75;
+    text-decoration: underline;
+}
+
+.All-Game .title, .Top-Categories .title, .More-Games-Categories .title {
+    border-bottom: none;
+    padding-left: 0px;
+}
+
+
+.input-search {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #f2f5f7;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.search-bar input{
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #336B75;
+    font-size: 16px;
+    background: url(picture/icon/search/search-button.svg) no-repeat 100% 0;
+    padding: 15px 10px 10px 15px;
+    background-size: 20px 20px;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    font-size: 0.7em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+  }
+
+.basket-icon{
+    width: 32px;
+    height: 32px;
+    background: url("picture/icon/search/basket.png") no-repeat center center;
+    background-size: contain; 
+    margin-bottom: 5px;
+}
+
+.banner_first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin: 0px;
+    background-color: #E9E7E2;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    height: 26px;
+}
+
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainmenu {
+    margin-left: 0;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+}
+
+.button-container-wrap{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-top: 8px;
+}
+
+.button-container{
+    background-color: white;
+}
+
+.add-to-basket, .click-and-collect{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: white
+}
+
+.add-to-basket{
+    background-color: #336b75;
+    border: none;
+}
+
+.add-to-basket:hover {
+    background-color: #36818f;
+}
+
+.click-and-collect{
+    background-color: #9e866b;
+    border: none;
+}
+
+.click-and-collect:hover{
+    background-color: #bda68d;
+}
+
+#main-title.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+/*-----------------------------------------Header-------------------------------------------*/
+
+/*-----------------------------------------Body---------------------------------------------*/
+
+.first_banner{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+    margin-top: 200px;
+}
+
+.first_banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+}
+
+.image-container{
+    display: flex;
+    margin: 0px 0px -18px;
+    padding: 0px 10px 0px;
+    justify-content: center;
+}
+
+.image-container img{
+    display: flex;
+    width: 96px;
+    height: 96px;
+    margin: 0px 0px 5px;
+}
+
+.image-container a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.image-container a div{
+    width: 96px;
+    height: 106px;
+}
+
+.Our-Bestsellers , .Everyone_Talking_About, .Non-Fiction_to_Change_Your_Mind, .Signed_Special_Editions, .Comming_Soon, .Perfect_Paperbacks, .Our_Best_Fiction_Books, .Our_Best_Non_Fiction_Books, .Recently_Reviewed, .Our_Best_Children_Books, .Our_Best_Young_Adult_Books, .Our_Bestselling_Stationery_Gifts {
+    background-color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #988274;
+}
+
+.nav, .Our-Bestsellers-sub_content_1, .Everyone_Talking_About-sub_content_2,.Non-Fiction_to_Change_Your_Mind-sub_content_3, .Signed_Special_Editions_sub_content_4, .Comming_Soon_sub_content_5, .Perfect_Paperbacks_sub_content_6, .Our_Best_Fiction_Books_sub_content_7, .You_May_Be_Looking_For_sub_content_8, .Our_Best_Non_Fiction_Books_sub_content_9, .Recently_Reviewed_sub_content_10, .Children_sub_content_11, .Adult_Books_sub_content_12, .Stationery_Gifts_sub_content_13 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.nav, .Our-Bestsellers-sub_content_1 a, .Everyone_Talking_About-sub_content_2 a,.Non-Fiction_to_Change_Your_Mind-sub_content_3 a, .Signed_Special_Editions_sub_content_4 a, .Comming_Soon_sub_content_5 a, .Perfect_Paperbacks_sub_content_6 a, .Our_Best_Fiction_Books_sub_content_7 a, .Our_Best_Non_Fiction_Books_sub_content_9 a, .Recently_Reviewed_sub_content_10 a, .Children_sub_content_11 a, .Adult_Books_sub_content_12 a, .Stationery_Gifts_sub_content_13 a {
+    font-family: sans-serif;
+    color: #336B75;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Our-Bestsellers-Image {
+    width: 100%;
+}
+
+.horizontal{
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    list-style: none;
+    z-index: 1;
+    display: block;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    list-style: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.book-card{
+    width: 160.25px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrap-container{
+    display: inline-block;
+    position: relative;
+}
+
+.image-wrap-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.image-wrap-container .button-container-wrap{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.image-wrap-container:hover .button-container-wrap{
+    display: flex;
+}
+
+.info-wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.title-wrap{
+    margin-top: 12px;
+    font-weight: 600;
+    color: #000;
+    flex: 1;
+}
+
+.title-wrap a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    color: #000;
+    text-decoration: none;
+    min-height: 2.4em; 
+    line-height: 1.2em;
+    font-family: sans-serif
+}
+
+.author-wrap{
+    margin: 5px 0 0;
+    color: #9E866B;
+    max-height: 16px;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+
+.author-wrap a {
+    text-decoration: none;
+    color: #336B75;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 590;
+}
+
+.price-wrap {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+  
+.price-wrap .format {
+    display: block;
+    color: #555;
+}
+  
+.price-wrap .previous-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #888;
+}
+  
+.price-wrap .price {
+    color: #000;
+    font-weight: bold;
+}
+
+.second-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.second-banner-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+    padding-left: 38px;
+}
+
+.second-banner .second-banner-picture{
+    width: 280px;
+    height: 217px;
+}
+
+.third-banner{
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+.last-banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 473.2px;
+    background-color: white;
+}
+
+.last-banner-first, .last-banner-second, .last-banner-third, .last-banner-fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 271px;
+    height: 397.83px;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.last-banner-first .image, .last-banner-second .image, .last-banner-third .image, .last-banner-fourth .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-banner-first img, .last-banner-second img, .last-banner-third img, .last-banner-fourth img{
+    width: 271px;
+    height: 225.77px;
+    padding: 5px 5px 5px 5px;
+}
+
+.You_May_Be_Looking_For_sub_content_8 h2{
+    text-align: center;  
+    width: 100%;
+}
+
+.You_May_Be_Looking_For img{
+    width: calc(25% - 20px);
+    height: auto;
+    object-fit: cover;
+    max-width: 280px;
+    box-sizing: border-box;
+}
+
+.Looking-for-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
+
+.four-banner{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.last-banner-first .title, .last-banner-second .title, .last-banner-third .title, .last-banner-fourth .title{
+    font-size: 1.5em;
+    font-family: serif;
+    font-style: italic;
+    padding-left: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.last-banner-first a, .last-banner-second a, .last-banner-third a, .last-banner-fourth a{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85em;
+    color: #000;
+    text-decoration: none;
+    font-family: serif
+}
+
+.last-banner-first .content, .last-banner-second .content, .last-banner-third .content, .last-banner-fourth .content {
+  padding-top: 25px;
+}
+
+.last-banner-first p, .last-banner-second p, .last-banner-third p, .last-banner-fourth p {
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: #000;
+    font-style: none;
+    font-weight: 200;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 0px 25px 0px 0px;
+}
+/*-----------------------------------------Body---------------------------------------------*/
+
+/*-----------------------------------------Footer---------------------------------------------*/
+footer{
+    position: relative;
+    left: auto;
+    bottom: auto;
+    background: #363636;
+    z-index: 1;
+    max-width: 1280px;
+}
+
+.footer_body {
+    background-color: #4E4E4E;
+    position: relative;
+    width: 100%;
+    padding: 0 110px 18px 20px;
+    margin: 0 auto;
+}
+
+.footer_body li {
+    margin: 0px 0px 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding-left: 0px;
+}
+
+.shopping_with_us{
+    margin: 0px 0px 14px;
+    padding: 16px 0px 0px 10px;
+
+}
+
+.legal{
+    margin: 0px 0px 14px;
+    padding: 16px 0px 0px 10px;
+
+}
+
+.shopping_list, .legal_list, .about_waterstones_list{
+    padding-left: 0;
+    margin: 0px 0px 6px;
+}
+
+.shopping_list li:hover, .legal li:hover, .about_waterstones li:hover, .follow_us li:hover{
+    text-decoration: underline;
+}
+
+.about_waterstones{
+    margin: 0px 0px 14px;
+    padding: 16px 0px 0px 10px;
+
+}
+
+.follow_us{
+    margin: 0px 0px 14px;
+    padding: 16px 0px 0px 10px;
+}
+
+.follow_us_list{
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Baskerville', serif;
+    margin: 19.92px 0px 15px;
+    padding: 0px 0px 4px;
+    font-weight: normal;
+    font-size: 52px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Baskerville', serif;
+    margin: 19.92px 0px 15px;
+    padding: 0px 0px 4px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+p{
+    font-size: 18px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px 0px 0px 26px;
+    color: #336B75;
+    font-weight: bold;
+}
+
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+div[class='footer_body'] ul{
+    color: white;
+    display: block;
+}
+
+.footer_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer_body .follow_us li {
+    padding-left: 25px;
+}
+
+.image-label{
+    color: black;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    width: 96px;
+    height: 17px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px
+}
+
+.Contact-us a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.X{
+    background: url(picture/icon/X.png) no-repeat 100% 0;
+    width: 5px;
+    height: 5px;
+    background-position: 0px 0;
+    padding-bottom: 15px;
+    padding-top: 2px;
+    background-size: 18px 18px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.Facebook {
+    background: url(picture/icon/facebook.png) no-repeat 100% 0;
+    width: 5px;
+    height: 5px;
+    background-position: 0px 0;
+    padding-bottom: 15px;
+    padding-top: 2px;
+    background-size: 18px 18px;
+}
+
+.Instagram {
+    background: url(picture/icon/instagram.png) no-repeat 100% 0;
+    width: 5px;
+    height: 5px;
+    background-position: 0px 0;
+    padding-bottom: 15px;
+    padding-top: 2px;
+    background-size: 18px 18px;
+}
+
+.TikTok {
+    background: url(picture/icon/icon-tiktok.svg) no-repeat 100% 0;
+    width: 5px;
+    height: 5px;
+    background-position: 0px 0;
+    padding-bottom: 15px;
+    padding-top: 2px;
+    background-size: 18px 18px;
+}
+
+.YouTube {
+    background: url(picture/icon/youtube.png) no-repeat 100% 0;
+    width: 5px;
+    height: 5px;
+    background-position: 0px 0;
+    padding-bottom: 15px;
+    padding-top: 2px;
+    background-size: 18px 18px;
+}
+
+
