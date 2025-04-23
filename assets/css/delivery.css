@@ -1,0 +1,386 @@
+/*General setup*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #ffffff;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+p, a, li, input, label{
+    font-size: 1.5rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+input[type="radio"] {
+    transform: scale(2);
+    transform-origin: left center;
+    accent-color: rgb(51, 107, 117);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+input, select{
+    height: 40px;
+}
+
+input{
+    border: 2px solid rgb(202,202, 202);
+}
+
+input:focus{
+    border: 2px solid rgb(121, 121, 121);
+    outline: none;
+}
+
+input.invalid{
+    border: 2px solid rgb(248, 116, 116);
+}
+
+/*CSS Variable*/
+:root{
+    --header-height: 100px;
+}
+
+/*Responsive for Mobile*/
+@media(max-width: 1024px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header, main, footer{
+        padding: 0 calc(15px + 2%);
+    }
+}
+/*End of Generial Setup*/
+
+/*Area of header*/
+header {
+    height: 100px;  
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+    position: fixed;
+    z-index: 1000;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.header__nav{
+    color: rgb(51, 107, 117);
+}
+
+.header__logo{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+/*Area of main have 2 section*/
+main{
+    margin-top: 112px;
+    flex: 1;
+    display: flex;
+}
+
+/*Section Checkout*/
+section.checkout{
+    flex: 3;
+    padding: 0 15px;
+}
+
+.checkout__step ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.checkout__step ul li a{
+    text-decoration: none;
+    background: rgb(190, 190, 190);
+    color: rgb(255, 255, 255);
+    line-height: 3;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.checkout__step ul li a.active {
+    background: rgb(51, 107, 117);
+}  
+
+.checkout__message{
+    height: 43px;
+    background-color: rgb(224, 233, 237);
+    display: flex;
+    gap: 30px;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.checkout__message .fa-truck-fast{
+    font-size: 25px;
+}
+
+.checkout__delivery{
+    border: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__nav{
+    border-top: 1px solid #d3d3d3;
+}
+
+.checkout__nav a{
+    text-decoration: none;
+    width: 219px;
+    line-height: 3;
+    display: block;
+    background-color: rgb(51, 107, 117);
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    margin: 20px 15px;
+    margin-left: auto;
+}
+
+/*Delivery of checkout*/
+.delivery{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 30px 15px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.delivery__content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 15px;
+}
+
+.delivery__choices{
+    display: flex;
+    gap: 39px;
+}
+
+.delivery__choice{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.delivery__choice--yes,
+.delivery__choice--no{
+  display: none;
+  flex-direction: column;
+}
+
+.delivery__choice--yes.active{
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery__choice--yes form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery__choice--no.active{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;  
+}
+
+.delivery__choice--no input,
+.delivery__choice--no select{
+    border: 2px solid #d3d3d3;
+}
+
+.account-info,
+.delivery-method,
+.order-notes{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-top: 1px dotted #d3d3d3;
+    padding: 30px 15px;
+    gap: 30px;
+}
+
+.account-method.active{
+    border-top: 1px dotted #d3d3d3;
+}
+
+.account-validate{
+    display: none;
+    background-color: rgb(255, 222, 222);
+    color: rgb(182, 3, 3);
+    margin-top: 10px;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 12px;
+}
+
+.null-validate,
+.invalid-validate{
+    display: none;
+    background-color: rgb(255, 222, 222);
+    color: rgb(182, 3, 3);
+    margin-top: 10px;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 12px;
+}
+
+.grid-end{
+    width: 70%;
+}
+
+.message__choice{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message__choice.active{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-sign{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-password{
+    color: rgb(51, 107, 117);
+}
+
+.sign{
+    line-height: 3;
+    background-color: rgb(51, 107, 117);
+    width: 165px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Section Payment*/
+section.payment{
+    flex: 1;
+    padding: 0 15px;
+    position: sticky;
+    height: 400px;
+    top: 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.payment__option-delivery,
+.payment__promotion,
+.payment__order{
+    border: 1px solid #d3d3d3;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-delivery,
+.order__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#info-vat{
+    color: rgb(92, 92, 92)
+}
+
+/*Footer*/
+footer{
+    height: 57px;
+    border-top: 1px solid #d2d3d3;
+    margin-top: 19px;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin-top: 12.9px;
+}
+
+.footer__content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+small{
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+}
+
+.footer__end{
+    padding-bottom: 12px;
+}
+
+.content__image{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__content ul{
+    display: flex;
+    gap: 20px;
+}
+
+.footer__content ul li a{
+    text-decoration: none;
+}
+
+.footer__content ul li a:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}

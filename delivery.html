@@ -1,0 +1,277 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delivery</title>
+        <link rel="stylesheet" href="../assets/css/delivery.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./home.html"
+                                class="header__nav"> <i
+                                    class="fa-solid fa-angle-left"></i>Back to
+                                shopping</a>
+                        </li>
+                        <li>
+                            <a href="./home.html"
+                                class="header__logo">VNBookStore</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__nav">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!--Section Delivery-->
+                <section class="checkout">
+                    <nav class="checkout__step">
+                        <ul>
+                            <li><a
+                                    href="sample-basket-for-delivery.html">BASKET</a></li>
+                            <li><a href="delivery.html">DELIVERY</a></li>
+                            <li><a
+                                    href="sample-payment-for-delivery.html">PAYMENT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="checkout__message">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Spend another 8.01£ to qualify for free UK
+                            delivery</p>
+                    </div>
+
+                    <!-- Main of Secssion -->
+                    <article class="checkout__delivery">
+                        <div class="delivery">
+                            <p class="delivery__message">Do you hava an
+                                account?</p>
+                            <div class="delivery__content">
+                                <div class="delivery__choices">
+                                    <div class="delivery__choice">
+                                        <input type="radio" name="choose"
+                                            id="yes"
+                                            value="yes">
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div class="delivery__choice">
+                                        <input type="radio" name="choose"
+                                            id="no"
+                                            value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+                                <div class="message__choice">
+                                    <p>Sign in to earn plus stamps and
+                                        redeem
+                                        your plus balance on eligible items
+                                        in
+                                        this order</p>
+                                    <p>Not a plus member yet? You can
+                                        upgrade in
+                                        your account dashboard anytime.</p>
+                                </div>
+                                <div class="delivery__choice--no">
+                                    <input type="email"
+                                        placeholder="Please type your email address">
+                                </div>
+                                <div class="delivery__choice--yes">
+                                    <form action="#">
+                                        <input type="email"
+                                            placeholder="Please type your email address"
+                                            class="email-validate">
+                                        <p
+                                            class="null-validate">Please
+                                            enter your email address</p>
+                                        <p
+                                            class="invalid-validate">Please
+                                            enter a valid email address</p>
+                                        <input type="password"
+                                            placeholder="Please type your password">
+                                        <div>
+                                            <nav class="payment-sign">
+                                                <a href="#"
+                                                    class="forgot-password">Forgot
+                                                    password</a>
+                                                <a href="#" class="sign">SIGN
+                                                    IN</a>
+                                            </nav>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__choice--no">
+                            <div class="account-info">
+                                <label for>First name</label>
+                                <div>
+                                    <input type="text"
+                                        placeholder="First name"
+                                        class="grid-end input">
+                                    <p class="account-validate grid-end">Please
+                                        enter your
+                                        first name</p>
+                                </div>
+
+                                <label for>Last name</label>
+                                <div>
+                                    <input type="text"
+                                        placeholder="Last name"
+                                        class="grid-end input" required>
+                                    <p class="account-validate grid-end">Please
+                                        enter your
+                                        last name</p>
+                                </div>
+                                <label for>Country</label>
+                                <select name id class="grid-end">
+                                    <option value>----------Select
+                                        your
+                                        country----------</option>
+                                </select>
+                                <label for>City</label>
+                                <select name id class="grid-end">
+                                    <option value>----------Select
+                                        your
+                                        city----------</option>
+                                </select>
+                                <label for>District</label>
+                                <select name id class="grid-end">
+                                    <option value>----------Select
+                                        your
+                                        district----------</option>
+                                </select>
+                                <label for>Address</label>
+                                <div>
+                                    <input type="text"
+                                        placeholder="Address line"
+                                        class="grid-end input" required>
+                                    <p class="account-validate grid-end">Please
+                                        enter your
+                                        address</p>
+                                </div>
+
+                            </div>
+                            <div class="delivery-method">
+                                <p>Delivery method</p>
+                                <div class="mothod-options">
+                                    <div class="method">
+                                        <input type="radio" name="choose"
+                                            id="method2"
+                                            value="method2">
+                                        <label for="method2">2nd Class</label>
+                                    </div>
+                                    <div class="method">
+                                        <input type="radio" name="choose"
+                                            id="method1" value="method1">
+                                        <label for="method1">1st Class</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-notes">
+                                <p>Order notes</p>
+                                <p>Orders may arrive in separate parcels; out of
+                                    stock items will be sent after we receive
+                                    stock.</p>
+                            </div>
+                        </div>
+                        <div class="checkout__nav">
+                            <a href="./delivery.html">NEXT:
+                                PAYMENT</a>
+                        </div>
+                    </article>
+                </section>
+
+                <!--Section Payment-->
+                <section class="payment">
+                    <div class="payment__option-delivery">
+                        <p class="title-delivery"><strong>Delivery
+                                options</strong></p>
+                        <div class="option-delivery">
+                            <p>2nd class to UK</p>
+                            <p>£2.99</p>
+                        </div>
+                        <div class="option-delivery">
+                            <p>1st class to UK</p>
+                            <p>£3.99</p>
+                        </div>
+                        <div class="option-delivery">
+                            <p>International</p>
+                            <p>£9.00</p>
+                        </div>
+                    </div>
+                    <div class="payment__promotion">
+                        <p>Add Promotion Code<i
+                                class="fa-solid fa-angle-left"></i></p>
+                    </div>
+                    <article class="payment__order">
+                        <p class="order__title"><strong>Your
+                                order</strong></p>
+                        <p class="payment__total-item"></p>
+                        <div class="order__info" id="info-vat">
+                            <p>Total VAT:</p>
+                            <p>£0.00</p>
+                        </div>
+                        <hr>
+                        <div class="order__info">
+                            <p><strong>Total to pay:</strong></p>
+                            <p
+                                class="payment__total-price order__info"><strong>£...</strong></p>
+
+                        </div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <nav class="footer__nav">
+                    <div class="footer__content">
+                        <ul class="content__nav">
+                            <li><a
+                                    href="https://www.waterstones.com/help/contact-us/28"
+                                    target="_blank"><small>Customer
+                                        help</small></a></li>
+                            <li>
+                                <a
+                                    href="https://www.waterstones.com/help/delivery-options/19"
+                                    target="_blank"> <small>Delivery</small></a>
+                            </li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/returning-items/41"
+                                    target="_blank"><small>Return</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/accessibility-statement/5"
+                                    target="_blank"><small>Accessibility</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/terms-and-conditions/46"
+                                    target="_blank"><small>Term and
+                                        Conditions</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/checkout/basket"
+                                    target="_blank"><small>Magane
+                                        Cookies</small></a></li>
+                        </ul>
+                        <div class="content__image">
+                            <img src="./assets/img/footer/applepay.png"
+                                alt="applepay">
+                            <img src="./assets/img/footer/paypal.png"
+                                alt="paypal">
+                            <img src="./assets/img/footer/accepted-cards.png"
+                                alt="accepted-cards">
+                        </div>
+                    </div>
+                    <small class="footer__end">&copy; Waterstones, 2025.
+                        Waterstones Booksellers
+                        Limited. Registered in England and Wales. Company number
+                        00610095. Registered office address: 203-206 Piccadilly,
+                        London, W1J 9HD.</small>
+                </nav>
+            </footer>
+        </div>
+        <script src="../assets/js/delivery.js" type="module"></script>
+    </body>
+</html>
