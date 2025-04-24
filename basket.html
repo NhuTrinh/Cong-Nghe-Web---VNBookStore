@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <div class="header-inner">
-      <a href="#" class="back-link">&lt; Back to shopping</a>
+      <a href="home.html" class="back-link">&lt; Back to shopping</a>
       <h1 class="logo">Waterstones</h1>
       <a href="#" class="help-link">Help</a>
     </div>
@@ -34,8 +34,8 @@
           <a href="#" class="remove-link">Remove</a>
         </div>
         <div class="quantity-select">
-          <select id="quantity-select">
-            <option selected>1</option>
+          <select>
+                      <option selected>1</option>
             <option>2</option>
             <option>3</option>
           </select>
@@ -74,15 +74,13 @@
         </div>
       </div>
 
-      <div class="summary-section">
-        <div class="order-summary">
-          <h4>Your order</h4>
-          <p id="item-count">1 Item</p>
-          <p id="subtotal">Subtotal (inc VAT): £7.99</p>
-          <p><strong id="total">Total to pay: £7.99</strong></p>
-          <p>Total VAT: £0.00</p>
-        </div>
+      
+      <div class="order-summary">
+        <p id="item-count">1 Item</p>
+        <p id="subtotal">Subtotal (inc VAT): £7.99</p>
+        <p id="total">Total to pay: £7.99</p>
       </div>
+      
 
       <button class="next-btn" onclick="goToDelivery()">NEXT: DELIVERY</button>
     </aside>
