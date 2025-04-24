@@ -26,7 +26,7 @@ ul{
 }
 
 .back-ground {
-    background-image: url('picture/back-ground.jpg');
+    background-image: url('/picture/back-ground.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ div[class='nav_left'] ul{
 }
 
 .nav_left .Shop_finder{
-    background: url(picture/icon/menu_left/shop_finder.png) no-repeat 100% 0; 
+    background: url(/picture/icon/menu_left/shop_finder.png) no-repeat 100% 0; 
     background-size: auto 18px;
     padding-right: 15px;
     background-position: 10px 0;
@@ -163,7 +163,7 @@ div[class='nav_right'] ul{
 }
 
 .nav_right .Account{
-    background: url(picture/icon/menu_right/account.png) no-repeat 100% 0;
+    background: url(/picture/icon/menu_right/account.png) no-repeat 100% 0;
     background-size: auto 18px;
     background-position: 8px 0;
     border-right: 1px solid #d5d4d1;
@@ -181,7 +181,7 @@ div[class='nav_right'] ul{
 
 
 .nav_right .Join .join_plus_icon{
-    background: url(picture/icon/menu_right/plus-green.png) no-repeat 100% 0;
+    background: url(/picture/icon/menu_right/plus-green.png) no-repeat 100% 0;
     background-size: auto 23px;
     padding-right: 25px;
     padding-left: 15px;
@@ -192,7 +192,7 @@ div[class='nav_right'] ul{
 
 
 .nav_right .Wish_list{
-    background: url(picture/icon/menu_right/heart.png) no-repeat 100% 0;
+    background: url(/picture/icon/menu_right/heart.png) no-repeat 100% 0;
     background-size: auto 16px;
     font-weight: 550;
     background-position: 14px 0;
@@ -490,7 +490,7 @@ a.menu::after {
     cursor: pointer;
     color: #336B75;
     font-size: 16px;
-    background: url(picture/icon/search/search-button.svg) no-repeat 100% 0;
+    background: url(/picture/icon/search/search-button.svg) no-repeat 100% 0;
     padding: 15px 10px 10px 15px;
     background-size: 20px 20px;
 }
@@ -510,7 +510,7 @@ a.menu::after {
 .basket-icon{
     width: 32px;
     height: 32px;
-    background: url("picture/icon/search/basket.png") no-repeat center center;
+    background: url("/picture/icon/search/basket.png") no-repeat center center;
     background-size: contain; 
     margin-bottom: 5px;
 }
@@ -707,7 +707,7 @@ a.menu::after {
 }
 
 .next-button{
-    background: url("picture/icon/right_scroll_teal.jpg") no-repeat 100% 0;
+    background: url(/picture/icon/right_scroll_teal.jpg") no-repeat 100% 0;
     width: 20px;
     height: 200px;
     top: 55%;
@@ -720,7 +720,7 @@ a.menu::after {
 }
 
 .previous-button{
-    background: url("picture/icon/left_scroll_teal.jpg") no-repeat 100% 0;
+    background: url(/picture/icon/left_scroll_teal.jpg") no-repeat 100% 0;
     width: 20px;
     height: 200px;
     top: 55%;
@@ -1075,7 +1075,7 @@ div[class='footer_body'] ul{
 }
 
 .X{
-    background: url(picture/icon/X.png) no-repeat 100% 0;
+    background: url(/picture/icon/X.png) no-repeat 100% 0;
     width: 5px;
     height: 5px;
     background-position: 0px 0;
@@ -1087,7 +1087,7 @@ div[class='footer_body'] ul{
 }
 
 .Facebook {
-    background: url(picture/icon/facebook.png) no-repeat 100% 0;
+    background: url(/picture/icon/facebook.png) no-repeat 100% 0;
     width: 5px;
     height: 5px;
     background-position: 0px 0;
@@ -1097,7 +1097,7 @@ div[class='footer_body'] ul{
 }
 
 .Instagram {
-    background: url(picture/icon/instagram.png) no-repeat 100% 0;
+    background: url(/picture/icon/instagram.png) no-repeat 100% 0;
     width: 5px;
     height: 5px;
     background-position: 0px 0;
@@ -1107,7 +1107,7 @@ div[class='footer_body'] ul{
 }
 
 .TikTok {
-    background: url(picture/icon/icon-tiktok.svg) no-repeat 100% 0;
+    background: url(/picture/icon/icon-tiktok.svg) no-repeat 100% 0;
     width: 5px;
     height: 5px;
     background-position: 0px 0;
@@ -1117,7 +1117,7 @@ div[class='footer_body'] ul{
 }
 
 .YouTube {
-    background: url(picture/icon/youtube.png) no-repeat 100% 0;
+    background: url(/picture/icon/youtube.png) no-repeat 100% 0;
     width: 5px;
     height: 5px;
     background-position: 0px 0;
