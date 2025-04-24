@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BASKET</title>
+  <link rel="stylesheet" href="styles-basket.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-inner">
+      <a href="#" class="back-link">&lt; Back to shopping</a>
+      <h1 class="logo">Waterstones</h1>
+      <a href="#" class="help-link">Help</a>
+    </div>
+  </header>
+
+  <div class="steps">
+    <div class="step active">BASKET</div>
+    <div class="step">DELIVERY</div>
+    <div class="step">PAYMENT</div>
+  </div>
+
+  <main class="main-container">
+    <section class="cart-left">
+      <div class="cart-item">
+        <img src="https://cdn.waterstones.com/bookjackets/large/9781/0350/9781035031269.jpg" alt="James" class="book-cover" />
+        <div class="cart-details">
+          <p class="book-title">James</p>
+          <p class="book-author">Percival Everett</p>
+          <p class="book-price"><del>£9.99</del> <span class="price">£7.99</span></p>
+          <p class="book-type">Paperback</p>
+          <p class="book-stock">Usually dispatched within 1-2 days</p>
+          <a href="#" class="remove-link">Remove</a>
+        </div>
+        <div class="quantity-select">
+          <select id="quantity-select">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="book-total">£7.99</div>
+      </div>
+
+      <div class="recommend-box">
+        <h3>WE'D LOVE TO TELL YOU ABOUT...</h3>
+        <div class="recommend-item">
+          <img src="https://cdn.waterstones.com/override/v2/large/2928/3773/2928377330453.jpg" alt="The Impossible Fortune" />
+          <div class="recommend-details">
+            <p class="recommend-title">The Impossible Fortune</p>
+            <p class="recommend-author">Richard Osman</p>
+            <p class="recommend-price">£22.00</p>
+            <p class="recommend-desc">The geriatric gang are back in the fifth page-turning instalment of Osman's bestselling phenomenon, as a wedding guest in desperate trouble sets in motion an investigation involving cryptic codes and ruthless villains.</p>
+            <button class="add-btn" onclick="addToBasket()">ADD TO BASKET</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="cart-right">
+      <div class="summary-section">
+        <div class="delivery-box">
+          <h4>Delivery options</h4>
+          <p>2nd class to UK - £2.99</p>
+          <p>1st class to UK - £3.99</p>
+          <p>International - from £9.00</p>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <div class="promo-code">
+          <h4>Add Promotion Code</h4>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <div class="order-summary">
+          <h4>Your order</h4>
+          <p id="item-count">1 Item</p>
+          <p id="subtotal">Subtotal (inc VAT): £7.99</p>
+          <p><strong id="total">Total to pay: £7.99</strong></p>
+          <p>Total VAT: £0.00</p>
+        </div>
+      </div>
+
+      <button class="next-btn" onclick="goToDelivery()">NEXT: DELIVERY</button>
+    </aside>
+  </main>
+
+  <script src="script-basket.js"></script>
+</body>
+</html>
