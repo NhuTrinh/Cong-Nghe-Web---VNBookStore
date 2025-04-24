@@ -707,7 +707,7 @@ a.menu::after {
 }
 
 .next-button{
-    background: url(/picture/icon/right_scroll_teal.jpg") no-repeat 100% 0;
+    background: url("/picture/icon/right_scroll_teal.jpg") no-repeat 100% 0;
     width: 20px;
     height: 200px;
     top: 55%;
@@ -720,7 +720,7 @@ a.menu::after {
 }
 
 .previous-button{
-    background: url(/picture/icon/left_scroll_teal.jpg") no-repeat 100% 0;
+    background: url("/picture/icon/left_scroll_teal.jpg") no-repeat 100% 0;
     width: 20px;
     height: 200px;
     top: 55%;
