@@ -1,3 +1,4 @@
+//Hàm cập nhật đơn hàng
 function updateOrderSummary(changeItemCount = 0, changePrice = 0) {
   const itemCount = document.getElementById("item-count");
   const subtotal = document.getElementById("subtotal");
@@ -12,7 +13,7 @@ function updateOrderSummary(changeItemCount = 0, changePrice = 0) {
   subtotal.innerText = `Subtotal (inc VAT): £${subtotalVal.toFixed(2)}`;
   total.innerText = `Total to pay: £${subtotalVal.toFixed(2)}`;
 }
-
+//Hàm thay đổi số lượng sản phẩm
 function handleQuantityChange(e) {
   const item = e.target.closest(".cart-item");
   const quantity = parseInt(e.target.value);
@@ -29,7 +30,7 @@ function handleQuantityChange(e) {
   const diff = newTotal - oldTotal;
   updateOrderSummary(0, diff);
 }
-
+//Hàm xử lý khi bấm remove
 function handleRemove(e) {
   e.preventDefault();
   const item = e.target.closest(".cart-item");
@@ -48,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", handleRemove);
   });
 });
-
+//Hàm thêm sản phẩm từ recommend box vào giỏ hàng
 function addToBasket() {
   const cartLeft = document.querySelector(".cart-left");
   const recommendBox = document.querySelector(".recommend-box");
@@ -83,6 +84,7 @@ function addToBasket() {
   newItem.querySelector(".remove-link").addEventListener("click", handleRemove);
   newItem.querySelector(".quantity-select select").addEventListener("change", handleQuantityChange);
 }
+//Hàm xử lý khi bấm nút delivery
 function goToDelivery() {
   window.location.href = "delivery.html";
 }
