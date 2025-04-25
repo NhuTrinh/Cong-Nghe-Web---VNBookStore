@@ -31,4 +31,48 @@ export default class Toggle {
       });
     });
   }
+
+  //Method 2. Open/Close modal
+  static modalToggle(openId, closeSelector, modalSelector, overlayId) {
+    const open = document.getElementById(openId);
+    const modal = document.querySelector(closeSelector);
+    const close = document.querySelector(modalSelector);
+    const overlay = document.getElementById(overlayId);
+
+    //Open modal
+    if (open) {
+      open.addEventListener("click", (event) => {
+        event.preventDefault();
+        modal.style.display = "flex";
+        overlay.style.display = "flex";
+      });
+    }
+
+    //Close modal
+    if (close) {
+      close.addEventListener("click", () => {
+        modal.style.display = "none";
+        overlay.style.display = "none";
+      });
+      window.addEventListener("click", (event) => {
+        if (!modal.contains(event.target) && event.target !== open) {
+          modal.style.display = "none";
+          overlay.style.display = "none";
+        }
+      });
+    }
+  }
+
+  //Method 3. Switch acitve page
+  static pageActice() {
+    const currentPage = window.location.href;
+    const links = document.querySelectorAll(".switch-active");
+    links.forEach((link) => {
+      if (link.href === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
 }

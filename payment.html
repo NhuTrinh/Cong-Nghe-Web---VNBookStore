@@ -1,0 +1,244 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delivery</title>
+        <link rel="stylesheet" href="../assets/css/delivery.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./home.html"
+                                class="header__nav"> <i
+                                    class="fa-solid fa-angle-left"></i>Back to
+                                shopping</a>
+                        </li>
+                        <li>
+                            <a href="./home.html"
+                                class="header__logo">VNBookStore</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.waterstones.com/help/contact-us/28"
+                                class="header__nav"
+                                id="help-modal">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!--Section Delivery-->
+                <section class="checkout">
+                    <nav class="checkout__step">
+                        <ul>
+                            <li><a
+                                    href="basket.html">BASKET</a></li>
+                            <li><a href="delivery.html"
+                                    class="switch-active">DELIVERY</a></li>
+                            <li><a
+                                    href="payment.html"
+                                    class="switch-active">PAYMENT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="checkout__message">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Spend another 8.01£ to qualify for free UK
+                            delivery</p>
+                    </div>
+
+                    <!-- Main of Secssion -->
+                    <article class="checkout__payment">
+                        <div class="book-card" id="card-container">
+                            <div class="card-title">
+                                <img src="./assets/img/footer/book-card.png"
+                                    alt="book-card">
+                                <p>VNBookStore Gift Card</p>
+                            </div>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="methods-payment">
+                            <p><strong>Choose your payment method:</strong> </p>
+                            <div class="method-payment">
+                                <div class="option-method">
+                                    <input type="radio" name="option-method"
+                                        id="paypal">
+                                    <label for="paypal">PayPal</label>
+                                </div>
+                                <img src="./assets/img/footer/paypal.png"
+                                    alt="PayPal">
+                            </div>
+                            <div class="method-payment">
+                                <div class="option-method">
+                                    <input type="radio" name="option-method"
+                                        id="credit">
+                                    <label for="credit">Credit/Debit
+                                        card</label>
+                                </div>
+                                <img
+                                    src="./assets/img/footer/accepted-cards.png"
+                                    alt="Credit">
+                            </div>
+                            <div class="method-payment">
+                                <div class="option-method">
+                                    <input type="radio" name="option-method"
+                                        id="cash">
+                                    <label for="cash">Cash</label>
+                                </div>
+                                <img src="./assets/img/footer/cash.png"
+                                    alt="Cash">
+                            </div>
+                        </div>
+
+                        <div class="checkout__nav">
+                            <div class="term-conditions">
+                                <input type="checkbox">
+                                <p>I agree to the <a
+                                        href="https://www.waterstones.com/help/terms-and-conditions/46">terms
+                                        and
+                                        conditions</a> Please read carefully,
+                                    this agreement sets out important legal
+                                    right and remedies.</p>
+                            </div>
+                            <div class="next-step">
+                                <a href="./delivery.html"
+                                    id="order-modal">PLACE ORDER</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!--Section Payment-->
+                <section class="payment">
+                    <div class="payment__option-delivery">
+                        <p class="title-delivery"><strong>Delivery
+                                to</strong></p>
+                        <div id="user-info">
+                        </div>
+                    </div>
+                    <div class="payment__promotion">
+                        <p>Add Promotion Code<i
+                                class="fa-solid fa-angle-left"></i></p>
+                    </div>
+                    <article class="payment__order">
+                        <p class="order__title"><strong>Your
+                                order</strong></p>
+                        <p class="payment__total-item"><a
+                                href="#" id="item-modal">1
+                                item</a></p>
+                        <div class="order__info" id="info-vat">
+                            <small>Total VAT:</small>
+                            <small>£0.00</small>
+                        </div>
+                        <hr>
+                        <div class="order__info">
+                            <p><strong>Total to pay:</strong></p>
+                            <p
+                                class="payment__total-price order__info"><strong>£7.99</strong></p>
+
+                        </div>
+                    </article>
+                </section>
+
+                <!--Area of modal-->
+                <!--Item Modal-->
+                <div class="item-modal" id="item-modal-overlay">
+                    <div class="modal">
+                        <div class="modal__title">
+                            <h3>Basket</h3>
+                            <span class="modal__close">&times;</span>
+                        </div>
+                        <div class="modal__content">
+                            <div class="modal__item">
+                                <img src="./assets/img/footer/james.png"
+                                    alt="james">
+                                <div>
+                                    <h3 class="book-title">James</h3>
+                                    <p class="book-author">Percival Everett</p>
+                                    <p
+                                        class="book-price"><span><del>£9.99</del></span>
+                                        <span
+                                            class="price">£7.99</span></p>
+                                    <p class="book-type">Paperback</p>
+                                    <p class="book-stock">Usually dispatched
+                                        within 1-2 days</p>
+                                </div>
+                                <div class="book-quantity-price">
+                                    <small>Qty 1</small>
+                                    <small>£7.99</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="basket.html" class="modal__nav">EDIT BASKET</a>
+                    </div>
+                </div>
+
+                <!--Order success Modal-->
+                <div id="order-modal-overlay">
+                    <div class="order-modal">
+                        <div class="order-modal-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="84"
+                                height="84" viewBox="0 0 84 84" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M41.6666 0C18.6549 0 0 18.6549 0 41.6666C0 64.6783 18.6549 83.3334 41.6666 83.3334C64.6783 83.3334 83.3334 64.6783 83.3334 41.6666C83.3334 18.6549 64.6785 0 41.6666 0ZM41.6666 75C23.2867 75 8.3334 60.0467 8.3334 41.6666C8.3334 23.2865 23.2865 8.3334 41.6666 8.3334C60.0467 8.3334 75 23.2865 75 41.6666C75 60.0467 60.0467 75 41.6666 75ZM57.3572 26.7801L63.2492 32.6721L37.5 58.5291L22.0541 43.0832L27.9459 37.1912L37.5 46.7453L57.3572 26.7801Z"
+                                    fill="#336B75" />
+                            </svg>
+                            <h3>Order successfully!</h3>
+                        </div>
+                        <a href="home.html" class="order-success">HOME</a>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <nav class="footer__nav">
+                    <div class="footer__content">
+                        <ul class="content__nav">
+                            <li><a
+                                    href="https://www.waterstones.com/help/contact-us/28"
+                                    target="_blank"><small>Customer
+                                        help</small></a></li>
+                            <li>
+                                <a
+                                    href="https://www.waterstones.com/help/delivery-options/19"
+                                    target="_blank"> <small>Delivery</small></a>
+                            </li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/returning-items/41"
+                                    target="_blank"><small>Return</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/accessibility-statement/5"
+                                    target="_blank"><small>Accessibility</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/help/terms-and-conditions/46"
+                                    target="_blank"><small>Term and
+                                        Conditions</small></a></li>
+                            <li><a
+                                    href="https://www.waterstones.com/checkout/basket"
+                                    target="_blank"><small>Magane
+                                        Cookies</small></a></li>
+                        </ul>
+                        <div class="content__image">
+                            <img src="./assets/img/footer/applepay.png"
+                                alt="applepay">
+                            <img src="./assets/img/footer/paypal.png"
+                                alt="paypal">
+                            <img src="./assets/img/footer/accepted-cards.png"
+                                alt="accepted-cards">
+                        </div>
+                    </div>
+                    <small class="footer__end">&copy; Waterstones, 2025.
+                        Waterstones Booksellers
+                        Limited. Registered in England and Wales. Company number
+                        00610095. Registered office address: 203-206 Piccadilly,
+                        London, W1J 9HD.</small>
+                </nav>
+            </footer>
+        </div>
+        <script src="../assets/js/delivery.js" type="module"></script>
+    </body>
+</html>

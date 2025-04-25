@@ -24,7 +24,10 @@
                                 class="header__logo">VNBookStore</a>
                         </li>
                         <li>
-                            <a href="#" class="header__nav">Help</a>
+                            <a
+                                href="https://www.waterstones.com/help/contact-us/28"
+                                class="header__nav"
+                                id="help-modal">Help</a>
                         </li>
                     </ul>
                 </nav>
@@ -35,10 +38,12 @@
                     <nav class="checkout__step">
                         <ul>
                             <li><a
-                                    href="sample-basket-for-delivery.html">BASKET</a></li>
-                            <li><a href="delivery.html">DELIVERY</a></li>
+                                    href="basket.html">BASKET</a></li>
+                            <li><a href="delivery.html"
+                                    class="switch-active">DELIVERY</a></li>
                             <li><a
-                                    href="sample-payment-for-delivery.html">PAYMENT</a></li>
+                                    href="payment.html"
+                                    class="switch-active">PAYMENT</a></li>
                         </ul>
                     </nav>
                     <div class="checkout__message">
@@ -78,21 +83,22 @@
                                         your account dashboard anytime.</p>
                                 </div>
                                 <div class="delivery__choice--no">
-                                    <input type="email"
-                                        placeholder="Please type your email address">
+                                    <input type="text"
+                                        placeholder="Please type your phone number"
+                                        id="phone-number">
                                 </div>
                                 <div class="delivery__choice--yes">
                                     <form action="#">
                                         <input type="email"
                                             placeholder="Please type your email address"
-                                            class="email-validate">
+                                            class="email-validate" id="email">
                                         <p
                                             class="null-validate">Please
                                             enter your email address</p>
                                         <p
                                             class="invalid-validate">Please
                                             enter a valid email address</p>
-                                        <input type="password"
+                                        <input type="password" id="password"
                                             placeholder="Please type your password">
                                         <div>
                                             <nav class="payment-sign">
@@ -113,7 +119,7 @@
                                 <div>
                                     <input type="text"
                                         placeholder="First name"
-                                        class="grid-end input">
+                                        class="grid-end input" id="first-name">
                                     <p class="account-validate grid-end">Please
                                         enter your
                                         first name</p>
@@ -123,51 +129,58 @@
                                 <div>
                                     <input type="text"
                                         placeholder="Last name"
-                                        class="grid-end input" required>
+                                        class="grid-end input" id="last-name">
                                     <p class="account-validate grid-end">Please
                                         enter your
                                         last name</p>
                                 </div>
                                 <label for>Country</label>
-                                <select name id class="grid-end">
+                                <select id="country-select"
+                                    class="grid-end">
                                     <option value>----------Select
                                         your
                                         country----------</option>
+                                    <option value>Viet Nam</option>
                                 </select>
                                 <label for>City</label>
-                                <select name id class="grid-end">
+                                <select id="province-select" class="grid-end">
                                     <option value>----------Select
                                         your
                                         city----------</option>
+                                    <option value>Ha Noi</option>
+                                    <option value>Da Nang</option>
+                                    <option value>Ho Chi Minh</option>
                                 </select>
                                 <label for>District</label>
-                                <select name id class="grid-end">
+                                <select id="district-select" class="grid-end">
                                     <option value>----------Select
                                         your
                                         district----------</option>
+                                    <option value>Quan 1</option>
+                                    <option value>Tan Phu</option>
+                                    <option value>Tan Binh</option>
                                 </select>
                                 <label for>Address</label>
                                 <div>
                                     <input type="text"
                                         placeholder="Address line"
-                                        class="grid-end input" required>
+                                        class="grid-end input" id="address">
                                     <p class="account-validate grid-end">Please
                                         enter your
                                         address</p>
                                 </div>
-
                             </div>
                             <div class="delivery-method">
                                 <p>Delivery method</p>
                                 <div class="mothod-options">
                                     <div class="method">
-                                        <input type="radio" name="choose"
+                                        <input type="radio" name="choose-method"
                                             id="method2"
                                             value="method2">
                                         <label for="method2">2nd Class</label>
                                     </div>
                                     <div class="method">
-                                        <input type="radio" name="choose"
+                                        <input type="radio" name="choose-method"
                                             id="method1" value="method1">
                                         <label for="method1">1st Class</label>
                                     </div>
@@ -175,14 +188,16 @@
                             </div>
                             <div class="order-notes">
                                 <p>Order notes</p>
-                                <p>Orders may arrive in separate parcels; out of
-                                    stock items will be sent after we receive
-                                    stock.</p>
+                                <input type="text" id="note"
+                                    placeholder="Enter your notes here">
                             </div>
                         </div>
                         <div class="checkout__nav">
-                            <a href="./delivery.html">NEXT:
-                                PAYMENT</a>
+                            <div class="next-step">
+                                <a href="./payment.html"
+                                    id="next-payment">NEXT:
+                                    PAYMENT</a>
+                            </div>
                         </div>
                     </article>
                 </section>
@@ -212,20 +227,53 @@
                     <article class="payment__order">
                         <p class="order__title"><strong>Your
                                 order</strong></p>
-                        <p class="payment__total-item"></p>
+                        <p class="payment__total-item"><a
+                                href="#" id="item-modal">1
+                                item</a></p>
                         <div class="order__info" id="info-vat">
-                            <p>Total VAT:</p>
-                            <p>£0.00</p>
+                            <small>Total VAT:</small>
+                            <small>£0.00</small>
                         </div>
                         <hr>
                         <div class="order__info">
                             <p><strong>Total to pay:</strong></p>
                             <p
-                                class="payment__total-price order__info"><strong>£...</strong></p>
+                                class="payment__total-price order__info"><strong>£7.99</strong></p>
 
                         </div>
                     </article>
                 </section>
+
+                <div class="item-modal" id="item-modal-overlay">
+                    <div class="modal">
+                        <div class="modal__title">
+                            <h3>Basket</h3>
+                            <span class="modal__close">&times;</span>
+                        </div>
+                        <div class="modal__content">
+                            <div class="modal__item">
+                                <img src="./assets/img/footer/james.png"
+                                    alt="james">
+                                <div>
+                                    <h3 class="book-title">James</h3>
+                                    <p class="book-author">Percival Everett</p>
+                                    <p
+                                        class="book-price"><span><del>£9.99</del></span>
+                                        <span
+                                            class="price">£7.99</span></p>
+                                    <p class="book-type">Paperback</p>
+                                    <p class="book-stock">Usually dispatched
+                                        within 1-2 days</p>
+                                </div>
+                                <div class="book-quantity-price">
+                                    <small>Qty 1</small>
+                                    <small>£7.99</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="basket.html" class="modal__nav">EDIT BASKET</a>
+                    </div>
+                </div>
             </main>
             <footer>
                 <nav class="footer__nav">
