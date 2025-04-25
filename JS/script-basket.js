@@ -49,16 +49,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Gắn sự kiện sau khi DOM đã sẵn sàng
-window.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".quantity-select select").forEach(select => {
-    select.addEventListener("change", handleQuantityChange);
-  });
-
-  document.querySelectorAll(".remove-link").forEach(link => {
-    link.addEventListener("click", handleRemove);
-  });
-});
 function addToBasket() {
   const cartLeft = document.querySelector(".cart-left");
   const recommendBox = document.querySelector(".recommend-box");
