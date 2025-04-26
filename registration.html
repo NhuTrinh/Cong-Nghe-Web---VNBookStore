@@ -6,7 +6,9 @@
     <title>VN BookStore</title>
     <!-- Using relative link cmt by thoai -->
     <!-- Reset.css using to reset style --> 
+
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- === Fonts==== -->
     <!-- Font serif -->
@@ -18,7 +20,6 @@
     />
     <!-- Font san-serif. Embed fonts Source Sans Pro. its not in google font -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
     <!-- Favicon -->
     <link
       rel="icon"
@@ -40,6 +41,71 @@
   </head>
   <body>
     <header id="header">
+      <div class="modal">
+        <div class="modal__sign-in">
+          <header class="modal__header">
+            <h3 class="modal__title">Sign In / Register</h3>
+            <a href="#!" class="modal__sign-in--close js-close-modal">×</a>
+          </header>
+          <div class="modal__body">
+            <div class="modal__register">
+              <span class="modal__register-here"
+                >Not registered?
+                <a href="/registration.html" class="modal__register-link"
+                  >CREATE AN ACCOUNT</a
+                >
+              </span>
+            </div>
+            <form
+              class="sign-in"
+              method="post"
+              action="https://api-gateway.fullstack.edu.vn/action_page.php"
+              name="sign-in"
+            >
+              <div class="form-group sign-in__form-group">
+                <input
+                  class="form__input sign-in__input"
+                  type="email"
+                  name="user[email]"
+                  class=""
+                  placeholder="Email"
+                  required
+                  autofocus
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                />
+              </div>
+              <!-- Regular Expression Validation email-->
+              <div class="form-group sign-in__form-group">
+                <input
+                  class="form__input sign-in__input"
+                  type="password"
+                  name="user[password]"
+                  required
+                  placeholder="Password"
+                />
+              </div>
+              <div class="sign-in__form-row">
+                <div class="checkbox sign-in__checkbox">
+                  <input
+                    type="checkbox"
+                    class="checkbox__input"
+                    id="remember-me"
+                    value="1"
+                    name="rememberMe"
+                    required
+                    hidden
+                  />
+                  <label for="remember-me" class="checkbox__label"
+                    >Remember me</label
+                  >
+                </div>
+                <button class="btn sign-in__btn" type="submit">Sign in</button>
+              </div>
+              <a href="#!" class="sign-in__reset-password">Reset password</a>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="back-ground">
         <div class="back-ground-border"></div>
     </div>
