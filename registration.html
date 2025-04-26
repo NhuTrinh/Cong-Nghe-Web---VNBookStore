@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VN BookStore</title>
     <!-- Using relative link cmt by thoai -->
-    <!-- Reset.css using to reset style --> 
+    <!-- Reset.css using to reset style -->
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -41,6 +41,183 @@
   </head>
   <body>
     <header id="header">
+      <div class="back-ground">
+        <div class="back-ground-border"></div>
+      </div>
+      <div class="nav">
+        <div class="nav_left_body">
+          <div class="nav_left">
+            <ul>
+              <li class="VNBookStore" style="display: none" id="vnbookstore">
+                <a href="https://www.waterstones.com/bookshops">VN BookStore</a>
+              </li>
+              <li class="Shop_finder">
+                <a href="https://www.waterstones.com/bookshops">SHOP FINDER</a>
+              </li>
+              <li class="Help">
+                <a href="https://www.waterstones.com/help">HELP</a>
+              </li>
+              <li class="Events">
+                <a href="https://www.waterstones.com/events">EVENTS</a>
+              </li>
+              <li class="Blog">
+                <a href="https://www.waterstones.com/the-waterstones-blog"
+                  >BLOG</a
+                >
+              </li>
+              <li class="Gift_card">
+                <a href="https://www.waterstones.com/category/gift-cards"
+                  >GIFT CARDS</a
+                >
+              </li>
+              <li class="Win">
+                <a href="https://www.waterstones.com/win">WIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_right_body">
+          <div class="nav_right">
+            <ul>
+              <li class="Account">
+                <a>ACCOUNT</a>
+                <div class="Account-container">
+                  <div class="Account-container-dropdown">
+                    <div class="Sign-in">
+                      <a href="#!" class="js-open-modal">Sign in</a>
+                    </div>
+                    <div class="Register">
+                      <a href="./registration.html">Register</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="Join">
+                <a href="https://www.waterstones.com/plus"
+                  >JOIN
+                  <span class="join_plus_icon"></span>
+                </a>
+              </li>
+              <li class="Wish_list">
+                <a
+                  >WISH LIST
+                  <span class="wish_list_icon"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="title" id="main-title">
+        <h1>VNBookStore</h1>
+      </div>
+      <div class="menu">
+        <nav class="mainmenu">
+          <ul>
+            <li class="New">
+              <a
+                href="https://www.waterstones.com/campaign/new-books"
+                class="menu"
+                >NEW</a
+              >
+            </li>
+            <li class="Comming_soon">
+              <a
+                href="https://www.waterstones.com/campaign/coming-soon"
+                class="menu"
+                >COMING SOON</a
+              >
+            </li>
+            <li class="Special_editions">
+              <a
+                href="https://www.waterstones.com/campaign/special-editions"
+                class="menu"
+                >SPECIAL EDITIONS</a
+              >
+            </li>
+            <li class="Books">
+              <a href="#" class="menu">BOOKS</a>
+            </li>
+            <li class="Favourites">
+              <a href="#" class="menu">FAVOURITES</a>
+            </li>
+            <li class="Game">
+              <a href="#" class="menu">GAMES</a>
+              <div class="sub-menu">
+                <div class="sub-menu-sub">
+                  <div class="All-Game">
+                    <span class="title">All Game</span>
+                    <ul>
+                      <li class="subnav-item">Board Games</li>
+                      <li class="subnav-item">Card Games</li>
+                      <li class="subnav-item">Children's Games & Puzzles</li>
+                      <li class="subnav-item">Games Flagships</li>
+                      <li class="subnav-item">Game of the Month</li>
+                      <li class="subnav-item">Jigsaw Puzzles</li>
+                    </ul>
+                  </div>
+                  <div class="Top-Categories">
+                    <span class="title">Top Categories</span>
+                    <ul>
+                      <li class="subnav-item">Family Games</li>
+                      <li class="subnav-item">Logic & Deduction Games</li>
+                      <li class="subnav-item">Party Games</li>
+                      <li class="subnav-item">Strategy Games</li>
+                      <li class="subnav-item">Traditional Games</li>
+                      <li class="subnav-item">Travel Games</li>
+                      <li class="subnav-item">Word Games</li>
+                      <li class="subnav-item">Accessories & Dice</li>
+                      <li class="subnav-item">Dungeons & Dragons</li>
+                    </ul>
+                  </div>
+                  <div class="More-Games-Categories">
+                    <span>More Games Categories</span>
+                    <ul>
+                      <li class="subnav-item">Abstract Games</li>
+                      <li class="subnav-item">Bluffing Games</li>
+                      <li class="subnav-item">Cooperative Games</li>
+                      <li class="subnav-item">Film & TV Games</li>
+                      <li class="subnav-item">Single Player Games</li>
+                      <li class="subnav-item">Thematic Games</li>
+                      <li class="subnav-item">Two Player Games</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="Stationery_gift">
+              <a
+                href="https://www.waterstones.com/category/stationery-gifts"
+                class="menu"
+                >STATIONERY & GIFTS</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <div class="input-search">
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Search Title, Author, Keywo..."
+                class="input"
+              />
+              <button
+                class="search-button"
+                type="submit"
+                aria-label="submit"
+              ></button>
+            </div>
+            <div class="basket">
+              <a class="basket-icon" href="basket.html"></a>
+              <span class="basket-text">BASKET</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner_first">
+        Free UK delivery on orders over £25, otherwise £2.99
+      </div>
       <div class="modal">
         <div class="modal__sign-in">
           <header class="modal__header">
@@ -106,203 +283,6 @@
           </div>
         </div>
       </div>
-      <div class="back-ground">
-        <div class="back-ground-border"></div>
-    </div>
-    <div class="nav">
-        <div class="nav_left_body">
-            <div class="nav_left">
-                <ul>
-                    <li class="VNBookStore" style="display: none;"
-                        id="vnbookstore">
-                        <a
-                            href="https://www.waterstones.com/bookshops">VN
-                            BookStore</a>
-                    </li>
-                    <li class="Shop_finder">
-                        <a
-                            href="https://www.waterstones.com/bookshops">SHOP
-                            FINDER</a>
-                    </li>
-                    <li class="Help">
-                        <a
-                            href="https://www.waterstones.com/help">HELP</a>
-                    </li>
-                    <li class="Events">
-                        <a
-                            href="https://www.waterstones.com/events">EVENTS</a>
-                    </li>
-                    <li class="Blog">
-                        <a
-                            href="https://www.waterstones.com/the-waterstones-blog">BLOG</a>
-                    </li>
-                    <li class="Gift_card">
-                        <a
-                            href="https://www.waterstones.com/category/gift-cards">GIFT
-                            CARDS</a>
-                    </li>
-                    <li class="Win">
-                        <a
-                            href="https://www.waterstones.com/win">WIN</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav_right_body">
-            <div class="nav_right">
-                <ul>
-                    <li class="Account">
-                        <a>ACCOUNT</a>
-                        <div class="Account-container">
-                            <div class="Account-container-dropdown">
-                                <div class="Sign-in">
-                                    <a href="registration.html">Sign in</a>
-                                </div>
-                                <div class="Register">
-                                    <a>Register</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="Join">
-                        <a
-                            href="https://www.waterstones.com/plus">JOIN
-                            <span class="join_plus_icon"></span>
-                        </a>
-                    </li>
-                    <li class="Wish_list">
-                        <a>WISH LIST
-                            <span class="wish_list_icon"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="title" id="main-title">
-        <h1>VNBookStore</h1>
-    </div>
-    <div class="menu">
-        <nav class="mainmenu">
-            <ul>
-                <li class="New">
-                    <a
-                        href="https://www.waterstones.com/campaign/new-books"
-                        class="menu">NEW</a>
-                </li>
-                <li class="Comming_soon">
-                    <a
-                        href="https://www.waterstones.com/campaign/coming-soon"
-                        class="menu">COMING SOON</a>
-                </li>
-                <li class="Special_editions">
-                    <a
-                        href="https://www.waterstones.com/campaign/special-editions"
-                        class="menu">SPECIAL EDITIONS</a>
-                </li>
-                <li class="Books">
-                    <a href="#" class="menu">BOOKS</a>
-                </li>
-                <li class="Favourites">
-                    <a href="#" class="menu">FAVOURITES</a>
-                </li>
-                <li class="Game">
-                    <a href="#" class="menu">GAMES</a>
-                    <div class="sub-menu">
-                        <div class="sub-menu-sub">
-                            <div class="All-Game">
-                                <span class="title">All Game</span>
-                                <ul>
-                                    <li class="subnav-item">Board
-                                        Games</li>
-                                    <li class="subnav-item">Card
-                                        Games</li>
-                                    <li
-                                        class="subnav-item">Children's
-                                        Games & Puzzles</li>
-                                    <li class="subnav-item">Games
-                                        Flagships</li>
-                                    <li class="subnav-item">Game of
-                                        the Month</li>
-                                    <li class="subnav-item">Jigsaw
-                                        Puzzles</li>
-                                </ul>
-                            </div>
-                            <div class="Top-Categories">
-                                <span class="title">Top
-                                    Categories</span>
-                                <ul>
-                                    <li class="subnav-item">Family
-                                        Games</li>
-                                    <li class="subnav-item">Logic &
-                                        Deduction Games</li>
-                                    <li class="subnav-item">Party
-                                        Games</li>
-                                    <li class="subnav-item">Strategy
-                                        Games</li>
-                                    <li
-                                        class="subnav-item">Traditional
-                                        Games</li>
-                                    <li class="subnav-item">Travel
-                                        Games</li>
-                                    <li class="subnav-item">Word
-                                        Games</li>
-                                    <li
-                                        class="subnav-item">Accessories
-                                        & Dice</li>
-                                    <li class="subnav-item">Dungeons
-                                        & Dragons</li>
-                                </ul>
-                            </div>
-                            <div class="More-Games-Categories">
-                                <span>More Games Categories</span>
-                                <ul>
-                                    <li class="subnav-item">Abstract
-                                        Games</li>
-                                    <li class="subnav-item">Bluffing
-                                        Games</li>
-                                    <li
-                                        class="subnav-item">Cooperative
-                                        Games</li>
-                                    <li class="subnav-item">Film &
-                                        TV Games</li>
-                                    <li class="subnav-item">Single
-                                        Player Games</li>
-                                    <li class="subnav-item">Thematic
-                                        Games</li>
-                                    <li class="subnav-item">Two
-                                        Player Games</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="Stationery_gift">
-                    <a
-                        href="https://www.waterstones.com/category/stationery-gifts"
-                        class="menu">STATIONERY & GIFTS</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-search">
-            <div class="input-search">
-                <div class="search-bar">
-                    <input type="text"
-                        placeholder="Search Title, Author, Keywo..."
-                        class="input">
-                    <button class="search-button" type="submit"
-                        aria-label="submit"></button>
-                </div>
-                <div class="basket">
-                    <a class="basket-icon" href="basket.html"></a>
-                    <span class="basket-text">BASKET</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="banner_first">
-        Free UK delivery on orders over £25, otherwise £2.99
-    </div>
     </header>
     <!-- Main -->
     <main class="container">
@@ -449,72 +429,71 @@
     <footer id="footer">
       <div class="footer_body">
         <div class="shopping_with_us">
-            <h3>SHOPPING WITH US</h3>
-            <ul class="shopping_list">
-                <li class="Contact-us">
-                    <a
-                        href="https://www.waterstones.com/help/contact-us/28">Contact
-                        Us</a>
-                </li>
-                <li>Bookshops</li>
-                <li>Click & Collect</li>
-                <li>Delivery Options</li>
-                <li>Online Pricing</li>
-                <li>Returning Items</li>
-                <li>Student Discount</li>
-                <li>Waterstones Gift Cards</li>
-                <li>Frequently Asked Questions</li>
-            </ul>
+          <h3>SHOPPING WITH US</h3>
+          <ul class="shopping_list">
+            <li class="Contact-us">
+              <a href="https://www.waterstones.com/help/contact-us/28"
+                >Contact Us</a
+              >
+            </li>
+            <li>Bookshops</li>
+            <li>Click & Collect</li>
+            <li>Delivery Options</li>
+            <li>Online Pricing</li>
+            <li>Returning Items</li>
+            <li>Student Discount</li>
+            <li>Waterstones Gift Cards</li>
+            <li>Frequently Asked Questions</li>
+          </ul>
         </div>
         <div class="legal">
-            <h3>LEGAL</h3>
-            <ul class="legal_list">
-                <li>Accessibility</li>
-                <li>Cookie Policy</li>
-                <li>Manage Cookies</li>
-                <li>Modern Slavery Statement</li>
-                <li>Privacy Notice - How We Use Your
-                    Information</li>
-                <li>Terms & Conditions</li>
-                <li>Gender Pay Gap Report</li>
-                <li>Complaints Process</li>
-            </ul>
+          <h3>LEGAL</h3>
+          <ul class="legal_list">
+            <li>Accessibility</li>
+            <li>Cookie Policy</li>
+            <li>Manage Cookies</li>
+            <li>Modern Slavery Statement</li>
+            <li>Privacy Notice - How We Use Your Information</li>
+            <li>Terms & Conditions</li>
+            <li>Gender Pay Gap Report</li>
+            <li>Complaints Process</li>
+          </ul>
         </div>
         <div class="about_waterstones">
-            <h3>ABOUT WATERSTONES</h3>
-            <ul class="about_waterstones_list">
-                <li>About us</li>
-                <li>Affiliates</li>
-                <li>Careers at Waterstones</li>
-                <li>Hatchards</li>
-                <li>independent Publishers</li>
-                <li>Waterstones Account Sales</li>
-                <li>Waterstones App</li>
-                <li>WaterstonesChildren's Laureate</li>
-                <li>Waterstones Plus</li>
-            </ul>
+          <h3>ABOUT WATERSTONES</h3>
+          <ul class="about_waterstones_list">
+            <li>About us</li>
+            <li>Affiliates</li>
+            <li>Careers at Waterstones</li>
+            <li>Hatchards</li>
+            <li>independent Publishers</li>
+            <li>Waterstones Account Sales</li>
+            <li>Waterstones App</li>
+            <li>WaterstonesChildren's Laureate</li>
+            <li>Waterstones Plus</li>
+          </ul>
         </div>
         <div class="follow_us">
-            <h3>FOLLOW US</h3>
-            <ul class="follow_us_list">
-                <li class="X">
-                    <a>X</a>
-                </li>
-                <li class="Facebook">
-                    <a>Facebook</a>
-                </li>
-                <li class="Instagram">
-                    <a>Instagram</a>
-                </li>
-                <li class="TikTok">
-                    <a>TikTok</a>
-                </li>
-                <li class="YouTube">
-                    <a>YouTube</a>
-                </li>
-            </ul>
+          <h3>FOLLOW US</h3>
+          <ul class="follow_us_list">
+            <li class="X">
+              <a>X</a>
+            </li>
+            <li class="Facebook">
+              <a>Facebook</a>
+            </li>
+            <li class="Instagram">
+              <a>Instagram</a>
+            </li>
+            <li class="TikTok">
+              <a>TikTok</a>
+            </li>
+            <li class="YouTube">
+              <a>YouTube</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
     </footer>
     <!-- modal__sign-in__close -->
     <script src="./assets/js/openCloseModal.js"></script>
